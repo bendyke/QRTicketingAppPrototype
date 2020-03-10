@@ -7,33 +7,72 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/nameEditText"
-        android:layout_width="match_parent"
+        android:id="@+id/neptunEditText"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="100dp"
         android:ems="10"
         android:inputType="text"
         android:text="Neptun Code"
-        app:layout_constraintTop_toBottomOf="@+id/neptuncodeEditText"
-        tools:layout_editor_absoluteX="-16dp" />
-
-    <EditText
-        android:id="@+id/neptuncodeEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
         android:text="Generate"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nameEditText" />
+        app:layout_constraintTop_toBottomOf="@+id/courseTextView" />
+
+    <Button
+        android:id="@+id/pdf_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PDF2TXT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:includeFontPadding="true"
+        android:text="Name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/neptunEditText" />
+
+    <TextView
+        android:id="@+id/courseTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Course"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameTextView" />
+
+    <TextView
+        android:id="@+id/extrasTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Extras if any..."
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/courseTextView" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
